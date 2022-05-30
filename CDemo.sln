@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class2", "Class2\Class2.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DependencyParent", "DependencyParent\DependencyParent.vcxproj", "{42CF8017-0CD2-4EF5-B99E-94EBEDF0291C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RapidjsonDemo", "RapidjsonDemo\RapidjsonDemo.vcxproj", "{2E30E1BA-51A0-4812-9E65-BD023E2315C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{42CF8017-0CD2-4EF5-B99E-94EBEDF0291C}.Release|x64.Build.0 = Release|x64
 		{42CF8017-0CD2-4EF5-B99E-94EBEDF0291C}.Release|x86.ActiveCfg = Release|Win32
 		{42CF8017-0CD2-4EF5-B99E-94EBEDF0291C}.Release|x86.Build.0 = Release|Win32
+		{2E30E1BA-51A0-4812-9E65-BD023E2315C0}.Debug|x64.ActiveCfg = Debug|x64
+		{2E30E1BA-51A0-4812-9E65-BD023E2315C0}.Debug|x64.Build.0 = Debug|x64
+		{2E30E1BA-51A0-4812-9E65-BD023E2315C0}.Debug|x86.ActiveCfg = Debug|Win32
+		{2E30E1BA-51A0-4812-9E65-BD023E2315C0}.Debug|x86.Build.0 = Debug|Win32
+		{2E30E1BA-51A0-4812-9E65-BD023E2315C0}.Release|x64.ActiveCfg = Release|x64
+		{2E30E1BA-51A0-4812-9E65-BD023E2315C0}.Release|x64.Build.0 = Release|x64
+		{2E30E1BA-51A0-4812-9E65-BD023E2315C0}.Release|x86.ActiveCfg = Release|Win32
+		{2E30E1BA-51A0-4812-9E65-BD023E2315C0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
