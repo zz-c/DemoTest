@@ -6,6 +6,3 @@ https://www.boost.org/
 编译好的二进制包，地址：
 https://sourceforge.net/projects/boost/
 https://sourceforge.net/projects/boost/files/boost-binaries/1.75.0/
-
-websocket使用手册
-https://docs.websocketpp.org/getting_started.html
