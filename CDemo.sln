@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AsioClientDemo", "AsioClien
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BoostDemo", "BoostDemo\BoostDemo.vcxproj", "{B795745C-EAB1-4405-AEC9-788D6FADC9F1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WebsocketppClientDemo", "WebsocketppClientDemo\WebsocketppClientDemo.vcxproj", "{9BA98048-474B-4A86-8F34-0DF802E92916}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{B795745C-EAB1-4405-AEC9-788D6FADC9F1}.Release|x64.Build.0 = Release|x64
 		{B795745C-EAB1-4405-AEC9-788D6FADC9F1}.Release|x86.ActiveCfg = Release|Win32
 		{B795745C-EAB1-4405-AEC9-788D6FADC9F1}.Release|x86.Build.0 = Release|Win32
+		{9BA98048-474B-4A86-8F34-0DF802E92916}.Debug|x64.ActiveCfg = Debug|x64
+		{9BA98048-474B-4A86-8F34-0DF802E92916}.Debug|x64.Build.0 = Debug|x64
+		{9BA98048-474B-4A86-8F34-0DF802E92916}.Debug|x86.ActiveCfg = Debug|Win32
+		{9BA98048-474B-4A86-8F34-0DF802E92916}.Debug|x86.Build.0 = Debug|Win32
+		{9BA98048-474B-4A86-8F34-0DF802E92916}.Release|x64.ActiveCfg = Release|x64
+		{9BA98048-474B-4A86-8F34-0DF802E92916}.Release|x64.Build.0 = Release|x64
+		{9BA98048-474B-4A86-8F34-0DF802E92916}.Release|x86.ActiveCfg = Release|Win32
+		{9BA98048-474B-4A86-8F34-0DF802E92916}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

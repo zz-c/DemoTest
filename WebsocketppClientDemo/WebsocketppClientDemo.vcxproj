@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{bdefe022-f8b0-4a83-acf3-26640828f818}</ProjectGuid>
+    <ProjectGuid>{9BA98048-474B-4A86-8F34-0DF802E92916}</ProjectGuid>
     <RootNamespace>WebsocketppServerDemo</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
