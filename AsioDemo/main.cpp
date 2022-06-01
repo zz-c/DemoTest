@@ -49,9 +49,7 @@ int main(int argc, char* argv[])
     try
     {
         char const* port = "8888";
-
         asio::io_context io_context;
-
         server(io_context, std::atoi(port));
     }
     catch (std::exception& e)
