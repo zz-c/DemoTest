@@ -30,6 +30,9 @@ int main() {
 	std::cout << "addr.is_v4():\t" << addr.is_v4() << std::endl;
 	std::cout << "addr.to_string():\t" << addr.to_string() << std::endl;
 
+
+	std::unique_ptr<boost::asio::steady_timer> m_reconn_timer;
+
 	try{
 		char const* port = "8888";
 		boost::asio::io_context io_context;
