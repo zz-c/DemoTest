@@ -1,4 +1,4 @@
-﻿//
+//
 //  sio_test_sample.cpp
 //
 //  Created by Melo Yao on 3/24/15.
@@ -69,9 +69,9 @@ int participants = -1;
 
 socket::ptr current_socket;
 
-void bind_events()
+void bind_events(socket::ptr &socket)
 {
-	current_socket->on("new message", sio::socket::event_listener_aux([&](string const& name, message::ptr const& data, bool isAck,message::list &ack_resp)
+	current_socket->on("new message", sio::socket::event_listener_aux([&](string const& name, message::ptr const& data, bool isAck,message::ptr &ack_resp)
                        {
                            _lock.lock();
                            string user = data->get_map()["username"]->get_string();
@@ -80,7 +80,7 @@ void bind_events()
                            _lock.unlock();
                        }));
     
-    current_socket->on("user joined",sio::socket::event_listener_aux([&](string const& name, message::ptr const& data, bool isAck,message::list &ack_resp)
+    current_socket->on("user joined",sio::socket::event_listener_aux([&](string const& name, message::ptr const& data, bool isAck,message::ptr &ack_resp)
                        {
                            _lock.lock();
                            string user = data->get_map()["username"]->get_string();
@@ -91,7 +91,7 @@ void bind_events()
                            HIGHLIGHT(user<<" joined"<<"\nthere"<<(plural?" are ":"'s ")<< participants<<(plural?" participants":" participant"));
                            _lock.unlock();
                        }));
-    current_socket->on("user left", sio::socket::event_listener_aux([&](string const& name, message::ptr const& data, bool isAck,message::list &ack_resp)
+    current_socket->on("user left", sio::socket::event_listener_aux([&](string const& name, message::ptr const& data, bool isAck,message::ptr &ack_resp)
                        {
                            _lock.lock();
                            string user = data->get_map()["username"]->get_string();
@@ -120,13 +120,13 @@ MAIN_FUNC
     _lock.unlock();
 	current_socket = h.socket();
 Login:
-    string nickname;
+    string nickname="room1";
     while (nickname.length() == 0) {
         HIGHLIGHT("Type your nickname:");
         
         getline(cin, nickname);
     }
-	current_socket->on("login", sio::socket::event_listener_aux([&](string const& name, message::ptr const& data, bool isAck,message::list &ack_resp){
+	current_socket->on("login", sio::socket::event_listener_aux([&](string const& name, message::ptr const& data, bool isAck,message::ptr &ack_resp){
         _lock.lock();
         participants = data->get_map()["numUsers"]->get_int();
         bool plural = participants !=1;
@@ -141,7 +141,7 @@ Login:
         _cond.wait(_lock);
     }
     _lock.unlock();
-    bind_events();
+    bind_events(current_socket);
     
     HIGHLIGHT("Start to chat,commands:\n'$exit' : exit chat\n'$nsp <namespace>' : change namespace");
     for (std::string line; std::getline(std::cin, line);) {
@@ -166,7 +166,7 @@ Login:
                     current_socket->close();
                 }
                 current_socket = h.socket(new_nsp);
-                bind_events();
+                bind_events(current_socket);
                 //if change to default nsp, we do not need to login again (since it is not closed).
                 if(current_socket->get_namespace() == "/")
                 {

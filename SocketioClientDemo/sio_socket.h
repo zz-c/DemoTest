@@ -19,22 +19,22 @@ namespace sio
         
         bool need_ack() const;
         
-        void put_ack_message(message::list const& ack_message);
+        void put_ack_message(message::ptr const& ack_message);
         
-        message::list const& get_ack_message() const;
+        message::ptr const& get_ack_message() const;
         
     protected:
         event(std::string const& nsp,std::string const& name,message::list const& messages,bool need_ack);
         event(std::string const& nsp,std::string const& name,message::list&& messages,bool need_ack);
 
-        message::list& get_ack_message_impl();
+        message::ptr& get_ack_message_impl();
         
     private:
         const std::string m_nsp;
         const std::string m_name;
         const message::list m_messages;
         const bool m_need_ack;
-        message::list m_ack_message;
+        message::ptr m_ack_message;
         
         friend class event_adapter;
     };
@@ -46,7 +46,7 @@ namespace sio
     class socket
     {
     public:
-        typedef std::function<void(const std::string& name,message::ptr const& message,bool need_ack, message::list& ack_message)> event_listener_aux;
+        typedef std::function<void(const std::string& name,message::ptr const& message,bool need_ack, message::ptr& ack_message)> event_listener_aux;
         
         typedef std::function<void(event& event)> event_listener;
         
@@ -70,7 +70,7 @@ namespace sio
         
         void off_error();
 
-        void emit(std::string const& name, message::list const& msglist = nullptr, std::function<void (message::list const&)> const& ack = nullptr);
+        void emit(std::string const& name, message::list const& msglist = nullptr, std::function<void (message::ptr const&)> const& ack = nullptr);
         
         std::string const& get_namespace() const;
         
@@ -91,8 +91,8 @@ namespace sio
         
     private:
         //disable copy constructor and assign operator.
-        socket(socket const&){}
-        void operator=(socket const&){}
+        socket(socket const& sock){}
+        void operator=(socket const& sock){}
 
         class impl;
         impl *m_impl;
