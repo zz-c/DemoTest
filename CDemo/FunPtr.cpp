@@ -21,7 +21,7 @@ void show_result(int a, int b, int (*ptr)(int,int))
 	cout << (*ptr)(a, b) << endl;
 }
 
-int main()
+int main2()
 {
 	int (*ptrFun)(int, int);
 

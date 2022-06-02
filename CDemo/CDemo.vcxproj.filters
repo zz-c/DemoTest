@@ -19,6 +19,9 @@
     <Filter Include="函数指针">
       <UniqueIdentifier>{9d5d94d7-bbad-45b8-9bc6-f19bfcb3785b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="泛型">
+      <UniqueIdentifier>{2e4f4923-10c6-4d2c-af58-65d9c8ef049c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CDemo.cpp">
@@ -32,6 +35,9 @@
     </ClCompile>
     <ClCompile Include="FunPtr.cpp">
       <Filter>函数指针</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeTest.cpp">
+      <Filter>泛型</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

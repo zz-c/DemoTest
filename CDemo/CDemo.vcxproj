@@ -143,6 +143,7 @@
     <ClCompile Include="FunPtr.cpp" />
     <ClCompile Include="Human.cpp" />
     <ClCompile Include="PtrTest.cpp" />
+    <ClCompile Include="TypeTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="t1.txt" />
