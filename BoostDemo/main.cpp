@@ -21,7 +21,7 @@
 //	}
 //}
 
-int main() {
+int main2() {
 	std::cout << "Hello io_service!\n";
 
 	// ip::address:from_string(str)：这个函数根据一个IPv4地址（用.隔开的）或者一个IPv6地址（十六进制表示）创建一个地址。
