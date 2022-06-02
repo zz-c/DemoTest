@@ -13,7 +13,7 @@
 #define MAX_RANGE (1000)
 #define random(x) (rand()%x)
 
-int main()
+int main0()
 {
     std::cout << "Hello World!\n";
 
@@ -46,7 +46,7 @@ int main()
 
         Sleep(nTimeStep);
     //};
-
+        return 0;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
