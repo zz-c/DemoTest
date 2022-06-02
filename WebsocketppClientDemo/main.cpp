@@ -51,7 +51,7 @@ void Timeout(client* c, websocketpp::connection_hdl& hdl, boost::asio::deadline_
 
 }
 
-int main(int argc, char* argv[])
+int main0(int argc, char* argv[])
 {
     client c;
 

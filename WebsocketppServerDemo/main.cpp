@@ -41,7 +41,7 @@ private:
     server m_endpoint;
 };
 
-int main() {
+int main0() {
     utility_server s;
     s.run();
     return 0;
