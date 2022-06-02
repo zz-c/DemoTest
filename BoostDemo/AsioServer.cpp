@@ -24,6 +24,10 @@ void session(boost::asio::ip::tcp::socket sock)
             else if (error)
                 throw std::system_error(error); // Some other error.
 
+            std::cout << "Rec is: ";
+            std::cout.write(data, length);
+            std::cout << "\n";
+
             boost::asio::write(sock, boost::asio::buffer(data, length));
         }
     }
@@ -46,6 +50,7 @@ void server(boost::asio::io_context& io_context, unsigned short port)
 
 int main(int argc, char* argv[])
 {
+    std::cout << "boost server start" << std::endl;
     try
     {
         char const* port = "8888";
@@ -56,6 +61,5 @@ int main(int argc, char* argv[])
     {
         std::cerr << "Exception: " << e.what() << "\n";
     }
-
     return 0;
 }

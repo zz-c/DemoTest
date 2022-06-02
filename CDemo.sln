@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WebsocketppClientDemo", "We
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SocketioClientDemo", "SocketioClientDemo\SocketioClientDemo.vcxproj", "{B6CA1AA3-12F2-4D51-88A9-451FEBBDEEC4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BoostClientDemo", "BoostClientDemo\BoostClientDemo.vcxproj", "{A3E7DEC7-3E50-4713-ADC6-51F1D283CC1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{B6CA1AA3-12F2-4D51-88A9-451FEBBDEEC4}.Release|x64.Build.0 = Release|x64
 		{B6CA1AA3-12F2-4D51-88A9-451FEBBDEEC4}.Release|x86.ActiveCfg = Release|Win32
 		{B6CA1AA3-12F2-4D51-88A9-451FEBBDEEC4}.Release|x86.Build.0 = Release|Win32
+		{A3E7DEC7-3E50-4713-ADC6-51F1D283CC1B}.Debug|x64.ActiveCfg = Debug|x64
+		{A3E7DEC7-3E50-4713-ADC6-51F1D283CC1B}.Debug|x64.Build.0 = Debug|x64
+		{A3E7DEC7-3E50-4713-ADC6-51F1D283CC1B}.Debug|x86.ActiveCfg = Debug|Win32
+		{A3E7DEC7-3E50-4713-ADC6-51F1D283CC1B}.Debug|x86.Build.0 = Debug|Win32
+		{A3E7DEC7-3E50-4713-ADC6-51F1D283CC1B}.Release|x64.ActiveCfg = Release|x64
+		{A3E7DEC7-3E50-4713-ADC6-51F1D283CC1B}.Release|x64.Build.0 = Release|x64
+		{A3E7DEC7-3E50-4713-ADC6-51F1D283CC1B}.Release|x86.ActiveCfg = Release|Win32
+		{A3E7DEC7-3E50-4713-ADC6-51F1D283CC1B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
