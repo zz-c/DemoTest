@@ -10,7 +10,7 @@ void printHumanArr(Human** humanArr) {
     }
 }
 
-int main()
+int main1()
 {
     std::cout << "ptr test!\n";
 

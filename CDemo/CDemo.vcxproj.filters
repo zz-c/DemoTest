@@ -16,6 +16,9 @@
     <Filter Include="指针">
       <UniqueIdentifier>{5d06e37e-1c0b-4904-b07a-ab2a9057b294}</UniqueIdentifier>
     </Filter>
+    <Filter Include="函数指针">
+      <UniqueIdentifier>{9d5d94d7-bbad-45b8-9bc6-f19bfcb3785b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CDemo.cpp">
@@ -26,6 +29,9 @@
     </ClCompile>
     <ClCompile Include="Human.cpp">
       <Filter>指针</Filter>
+    </ClCompile>
+    <ClCompile Include="FunPtr.cpp">
+      <Filter>函数指针</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

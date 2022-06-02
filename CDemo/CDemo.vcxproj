@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CDemo.cpp" />
+    <ClCompile Include="FunPtr.cpp" />
     <ClCompile Include="Human.cpp" />
     <ClCompile Include="PtrTest.cpp" />
   </ItemGroup>
