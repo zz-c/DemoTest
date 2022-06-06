@@ -10,7 +10,12 @@ void printHumanArr(Human** humanArr) {
     }
 }
 
-int main1()
+//引用
+void testYingYong(Human& h) {
+    std::cout << "testYingYong:" << h.getAge() << ", " << h.getSex() << std::endl;
+}
+
+int main()//int main1()
 {
     std::cout << "ptr test!\n";
 
@@ -34,6 +39,11 @@ int main1()
     humanArr[3] = new Human();
     humanArr[3]->setAge(3);
     printHumanArr(humanArr);
+
+    //引用测试
+    Human h;
+    h.setAge(4);
+    testYingYong(h);
 
     return 0;
 }
