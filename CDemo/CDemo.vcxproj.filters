@@ -22,6 +22,9 @@
     <Filter Include="泛型">
       <UniqueIdentifier>{2e4f4923-10c6-4d2c-af58-65d9c8ef049c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="线程">
+      <UniqueIdentifier>{d4b5014d-243c-4af7-bfd5-fb14561c15c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CDemo.cpp">
@@ -38,6 +41,9 @@
     </ClCompile>
     <ClCompile Include="TypeTest.cpp">
       <Filter>泛型</Filter>
+    </ClCompile>
+    <ClCompile Include="mainThread.cpp">
+      <Filter>线程</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

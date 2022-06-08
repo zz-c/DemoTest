@@ -15,7 +15,7 @@ void testYingYong(Human& h) {
     std::cout << "testYingYong:" << h.getAge() << ", " << h.getSex() << std::endl;
 }
 
-int main()//int main1()
+int mainPtr()//int mainPtr()
 {
     std::cout << "ptr test!\n";
 

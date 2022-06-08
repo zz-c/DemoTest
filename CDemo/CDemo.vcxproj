@@ -142,6 +142,7 @@
     <ClCompile Include="CDemo.cpp" />
     <ClCompile Include="FunPtr.cpp" />
     <ClCompile Include="Human.cpp" />
+    <ClCompile Include="mainThread.cpp" />
     <ClCompile Include="PtrTest.cpp" />
     <ClCompile Include="TypeTest.cpp" />
   </ItemGroup>
