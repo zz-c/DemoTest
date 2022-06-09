@@ -114,7 +114,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;HONG_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -144,6 +144,7 @@
     <ClCompile Include="Human.cpp" />
     <ClCompile Include="mainThread.cpp" />
     <ClCompile Include="PtrTest.cpp" />
+    <ClCompile Include="testHong.cpp" />
     <ClCompile Include="TypeTest.cpp" />
   </ItemGroup>
   <ItemGroup>

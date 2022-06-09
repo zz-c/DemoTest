@@ -25,6 +25,9 @@
     <Filter Include="线程">
       <UniqueIdentifier>{d4b5014d-243c-4af7-bfd5-fb14561c15c2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="宏">
+      <UniqueIdentifier>{09d854ff-6bc0-4ec0-9461-58b94e659580}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CDemo.cpp">
@@ -44,6 +47,9 @@
     </ClCompile>
     <ClCompile Include="mainThread.cpp">
       <Filter>线程</Filter>
+    </ClCompile>
+    <ClCompile Include="testHong.cpp">
+      <Filter>宏</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
